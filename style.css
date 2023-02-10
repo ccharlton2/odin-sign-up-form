@@ -45,12 +45,19 @@ body {
 }
 
 .logo-container {
+    padding: 24px;
     background-color: black;
     opacity: 0.4;
     display: flex;
     justify-content: center;
+    gap: 24px;
+    align-items: center;
     position: relative;
     bottom: 75%;
+}
+
+.logo-text {
+    font-size: 60px;
 }
 
 .logo {
@@ -105,4 +112,5 @@ label {
     font-size: 16px;
     font-family: "montserrat-bold";
     text-transform: uppercase;
+    gap: 10px;
 }
