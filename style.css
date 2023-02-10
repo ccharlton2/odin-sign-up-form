@@ -17,6 +17,19 @@ body {
     font-family: "montserrat-medium";
 }
 
+.hero {
+    padding: 40px 30% 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero p {
+    font-family: "montserrat-bold";
+    font-size: 20px;
+    line-break: strict;
+}
+
 .sidebar {
     display: flex;
 }
