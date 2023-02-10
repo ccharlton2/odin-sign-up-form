@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,69 @@
     <link rel="stylesheet" href="style.css">
     <title>Sign-Up</title>
 </head>
+
 <body>
-    <h1>Sign-Up</h1>
+    <div class="sidebar">
+        <div class="img-container">
+            <img class="sidebar-img" src="/img/assets/guillaume-briard-lSXpV8bDeMA-unsplash.jpg"
+                alt="Rocky, misty, wind stricken mountains under a blue sky.">
+            <div class="logo-container">
+                <img class="logo" src="/img/assets/odin-lined.png"
+                    alt="A cute rendition of Odin. The Odin Project's logo.">
+                <div class="logo-text">Odin</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="hero-primary">
+            <p>This is not a real online service! You know you need something like this in your life to realize your
+                deepest dreams. Sign up <em>now</em> to get started.</p>
+        </div>
+        <div class="hero-secondary">
+            <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="form-container">
+            <h2>Let's do this!</h2>
+            <form action="">
+                <div class="form-row">
+                    <label for="first-name">First Name
+                        <input type="text" id="first-name" name="user-f-name" required>
+                    </label>
+
+                    <label for="last-name">Last Name
+                        <input type="text" id="last-name" name="user-l-name" required>
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email
+                        <input type="email" id="email" name="user-email" required>
+                    </label>
+
+                    <label for="tel">Phone Number
+                        <input type="tel" id="tel" name="user-tel">
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password
+                        <input type="password" id="password" name="user-password">
+                    </label>
+
+                    <label for="confirm-password">Confirm Password
+                        <input type="password" id="confirm-password" name="confirm-user-password">
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <button class="create-account-button">Create Account</button>
+        <div>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
 </body>
+
 </html>
