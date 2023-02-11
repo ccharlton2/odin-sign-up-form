@@ -101,11 +101,15 @@ input[type="tel"],
 input[type="email"],
 input[type="password"] {
     background-color: var(--background-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 3px;
+    border: 2px solid var(--accent-color);
+    border-radius: 4px;
     width: 250px;
     padding: 7px;
     font-size: 14px;
+}
+
+input:invalid {
+    border-color: rgb(255, 99, 99);
 }
 
 .form-row label {
