@@ -126,7 +126,6 @@ label {
     min-width: 10%;
     padding: 16px;
     margin-top: 48px;
-    margin-left: 25%;
     border-radius: 8px;
     border: none;
     background-color: #839290;
@@ -135,6 +134,15 @@ label {
     font-family: "montserrat-bold";
 }
 
+.create-account-button:hover {
+    cursor: pointer;
+}
+
 .returning-user {
     flex: 1;
+}
+
+.button-container {
+    flex: 1;
+    margin-left: 36px;
 }
