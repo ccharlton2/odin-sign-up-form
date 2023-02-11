@@ -48,8 +48,7 @@ body {
 
 .logo-container {
     padding: 24px;
-    background-color: black;
-    opacity: 0.4;
+    background-color: rgb(29, 28, 28, .25);
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -58,16 +57,16 @@ body {
     bottom: 75%;
 }
 
-.logo-text {
-    font-size: 60px;
-}
-
 .logo {
     width: 25%;
+    position: relative;
+    bottom: 75%;
 }
 
 .logo-text {
-    color: rgb(233, 229, 229);
+    font-size: 60px;
+    color: white;
+    position: relative;
 }
 
 .main-content {
