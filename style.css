@@ -12,6 +12,7 @@ body {
     --background-color: #f9fafb;
     --secondary-color: rgb(243, 241, 241);
     --accent-color: rgb(167, 167, 167);
+    --error: rgb(248, 86, 86);
     display: flex;
     min-height: 100vh;
     width: 100%;
@@ -108,10 +109,6 @@ input[type="password"] {
     font-size: 14px;
 }
 
-input:invalid {
-    border-color: rgb(255, 99, 99);
-}
-
 .form-row label {
     margin-bottom: 15px;
     display: flex;
@@ -149,4 +146,16 @@ label {
 .button-container {
     flex: 1;
     margin-left: 36px;
+}
+
+.error-message {
+    color: var(--error);
+    font-size: 12px;
+}
+
+input:focus:invalid {
+    border-color: var(--error);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid~.error-message {
 }
