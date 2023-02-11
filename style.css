@@ -120,6 +120,7 @@ label {
     font-family: "montserrat-bold";
     text-transform: uppercase;
     gap: 10px;
+    position: relative;
 }
 
 .create-account-button {
@@ -149,13 +150,17 @@ label {
 }
 
 .error-message {
+    position: absolute;
+    display: none;
     color: var(--error);
     font-size: 12px;
 }
 
-input:focus:invalid {
+input:not(:focus):not(:placeholder-shown):invalid {
     border-color: var(--error);
 }
 
 input:not(:focus):not(:placeholder-shown):invalid~.error-message {
+    top: 75px;
+    display: inline;
 }

@@ -45,7 +45,7 @@
 
                 <div class="form-row">
                     <label for="email">Email
-                        <input type="email" id="email" name="user-email" required>
+                        <input type="email" id="email" name="user-email" placeholder=" " required>
                         <span class="error-message">Please enter a valid email address</span>
                     </label>
 
@@ -56,11 +56,13 @@
 
                 <div class="form-row">
                     <label for="password">Password
-                        <input type="password" id="password" name="user-password" required>
+                        <input type="password" id="password" name="user-password" placeholder=" " required>
+                        <span class="error-message">Password is required</span>
                     </label>
 
                     <label for="confirm-password">Confirm Password
-                        <input type="password" id="confirm-password" name="confirm-user-password" required>
+                        <input type="password" id="confirm-password" name="confirm-user-password" placeholder=" " required>
+                        <span class="error-message">Passwords do not match</span>
                     </label>
                 </div>
             </div>
