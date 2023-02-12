@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
     <title>Sign-Up</title>
 </head>
 
@@ -30,7 +31,7 @@
         </div>
 
 
-        <form action="">
+        <form id="sign-up-form" action="">
             <div class="form-container">
                 <h2>Let's do this!</h2>
                 <div class="form-row">
@@ -45,7 +46,7 @@
 
                 <div class="form-row">
                     <label for="email">Email
-                        <input type="email" id="email" name="user-email" placeholder=" " required>
+                        <input type="email" id="email" name="user-email" placeholder=" ">
                         <span class="error-message">Please enter a valid email address</span>
                     </label>
 
@@ -56,13 +57,13 @@
 
                 <div class="form-row">
                     <label for="password">Password
-                        <input type="password" id="password" name="user-password" placeholder=" " required>
+                        <input type="password" id="password" name="user-password" placeholder=" ">
                         <span class="error-message">Password is required</span>
                     </label>
 
                     <label for="confirm-password">Confirm Password
-                        <input type="password" id="confirm-password" name="confirm-user-password" placeholder=" " required>
-                        <span class="error-message">Passwords do not match</span>
+                        <input type="password" id="confirm-password" name="confirm-user-password" placeholder=" ">
+                        <span class="error-message" id="password-error">Passwords do not match</span>
                     </label>
                 </div>
             </div>
